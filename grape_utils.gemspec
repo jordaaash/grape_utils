@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Jordan Sexton"]
-  s.date = "2014-05-27"
+  s.date = "2014-06-01"
   s.description = "A toolkit of utility classes and Grape core extensions."
   s.email = "jordan@jordansexton.com"
   s.extra_rdoc_files = [
@@ -26,12 +26,14 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "grape_utils.gemspec",
     "lib/grape_utils.rb",
     "lib/grape_utils/gem_version.rb",
     "lib/grape_utils/validators.rb",
     "lib/grape_utils/validators/assign_validator.rb",
     "lib/grape_utils/validators/clamp_validator.rb",
     "lib/grape_utils/validators/convert_validator.rb",
+    "lib/grape_utils/validators/date_time_validator.rb",
     "lib/grape_utils/validators/date_validator.rb",
     "lib/grape_utils/validators/if_validator.rb",
     "lib/grape_utils/validators/set_validator.rb",
