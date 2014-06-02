@@ -2,9 +2,10 @@ module GrapeUtils
   module Validators
     class SizeValidator < Grape::Validations::SingleOptionValidator
       def validate_param! (attr_name, params)
-        unless @option.include?(params[attr_name].size)
-          raise Grape::Exceptions::Validation,
-                param: @scope.full_name(attr_name), message: 'size invalid'
+        value = params[attr_name]
+        if value.nil? || !@option.include?(value.size)
+          param = @scope.full_name(attr_name)
+          raise Grape::Exceptions::Validation, param: param, message: 'invalid'
         end
       end
     end

@@ -4,8 +4,8 @@ module GrapeUtils
       def validate_param! (attr_name, params)
         params[attr_name] = DateTime.strptime(params[attr_name], @option)
       rescue ArgumentError, TypeError
-        raise Grape::Exceptions::Validation,
-              param: @scope.full_name(attr_name), message: 'invalid'
+        param = @scope.full_name(attr_name)
+        raise Grape::Exceptions::Validation, param: param, message: 'invalid'
       end
     end
   end
