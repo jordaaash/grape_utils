@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'grape', github: 'intridea/grape'
+gem 'grape', '~> 0.7.1', github: 'intridea/grape'
 
 group :development do
   gem 'shoulda',   '>= 0'
