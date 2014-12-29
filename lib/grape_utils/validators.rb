@@ -1,3 +1,4 @@
+require 'grape_utils/validators/alias_validator'
 require 'grape_utils/validators/assign_validator'
 require 'grape_utils/validators/clamp_validator'
 require 'grape_utils/validators/convert_validator'

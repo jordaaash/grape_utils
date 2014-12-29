@@ -3,6 +3,7 @@ require 'grape_utils/version'
 
 module GrapeUtils
   module Validators
+    autoload :AliasValidator,    'grape_utils/validators/alias_validator'
     autoload :AssignValidator,   'grape_utils/validators/assign_validator'
     autoload :ClampValidator,    'grape_utils/validators/clamp_validator'
     autoload :ConvertValidator,  'grape_utils/validators/convert_validator'
