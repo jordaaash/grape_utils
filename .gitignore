@@ -51,3 +51,6 @@ pkg
 
 # For rubinius:
 #*.rbc
+
+# For RubyMine
+.idea
